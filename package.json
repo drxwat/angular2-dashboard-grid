@@ -1,0 +1,27 @@
+{
+  "name": "angular2-dashboard-grid",
+  "version": "1.0.0",
+  "description": "Configurable grid for dynamic dashboards",
+  "author": "drxwat",
+  "license": "MIT",
+  "scripts": {
+    "cleanup": "rimraf dist/grid* dist/main* dist/bundles",
+    "bundling": "rollup -c",
+    "minify": "uglifyjs dist/bundles/DGrid.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/DGrid.umd.min.js",
+    "copy": "copyfiles -f LICENSE README.md dist",
+    "build": "npm run cleanup && ngc && npm run bundling && npm run minify"
+  },
+  "devDependencies": {
+    "@angular/compiler": "4.2.4",
+    "@angular/compiler-cli": "4.2.4",
+    "@angular/core": "4.2.4",
+    "@types/node": "8.0.1",
+    "rimraf": "2.6.2",
+    "rollup": "0.50.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rxjs": "5.4.1",
+    "typescript": "2.3.4",
+    "uglify-js": "^2.7.5",
+    "zone.js": "0.8.12"
+  }
+}

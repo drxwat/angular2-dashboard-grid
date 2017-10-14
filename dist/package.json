@@ -1,0 +1,18 @@
+{
+    "name": "angular2-dashboard-grid",
+    "version": "1.0.1",
+    "description": "Configurable grid for dynamic dashboards",
+    "author": "drxwat",
+    "module": "main.js",
+    "main": "bundles/DGrid.umd.min.js",
+    "typings": "main.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/drxwat/angular2-dashboard-grid.git"
+      },
+      "keywords": [
+        "angular2",
+        "grid",
+        "dashboard"
+      ]
+}
